@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h2>Calculadora</h2>
+    </header>
+
+    <section class="inputs">
+      <input type="number" id="valor1" placeholder="Digite o primeiro número" />
+      <input type="number" id="valor2" placeholder="Digite o segundo número" />
+    </section>
+
+    <section class="controls">
+      <label for="Operacao">Operação:</label>
+      <select id="Operacao">
+        <option value="+">Soma</option>
+        <option value="-">Subtração</option>
+        <option value="*">Multiplicação</option>
+        <option value="/">Divisão</option>
+      </select>
+      <button id="Calcular">Calcular</button>
+    </section>
+
+    <section class="output">
+      <strong>Resultado:</strong> <span id="saida">0</span>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
